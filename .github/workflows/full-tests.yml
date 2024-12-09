@@ -50,3 +50,4 @@ jobs:
           name: Summary report
           path: "cypress/reports/junit/results-*.xml"
           reporter: jest-junit
+          
