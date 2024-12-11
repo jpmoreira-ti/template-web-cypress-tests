@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-09T22:54:28.925Z",
-    "end": "2024-12-09T22:54:30.334Z",
-    "duration": 1409,
+    "start": "2024-12-11T17:57:07.078Z",
+    "end": "2024-12-11T17:57:08.519Z",
+    "duration": 1441,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2c55bcfb-4d5b-4000-acdf-1f942083b3da",
+      "uuid": "4adfd4ff-b5cd-45d3-8e99-3f1d42a2775c",
       "title": "",
       "fullFile": "cypress/e2e/website_search_spec.cy.js",
       "file": "cypress/e2e/website_search_spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "40a0d309-5c3f-4f6e-88bb-eeadfc31d9a1",
+          "uuid": "04e456e9-3167-4e36-b24d-46657e1f44c0",
           "title": "Quality Tools Automation",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "should search Cypress on website",
               "fullTitle": "Quality Tools Automation should search Cypress on website",
               "timedOut": null,
-              "duration": 491,
+              "duration": 498,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('https://qualitytoolsautomation.com.br');\ncy.get('#search-input-templates').type('Cypress');\ncy.get('#cypress').should('be.visible').and('contain', 'Javascript + Cypress');",
+              "code": "cy.visit('https://qualitytoolsautomation.com.br');\ncy.get('#search-input-templates').type('Cypress');\ncy.get('#cypress').should('be.visible').and('contain', 'Cypress');",
               "err": {},
-              "uuid": "fa873a9d-2b92-4d4d-838e-8baee683b5dd",
-              "parentUUID": "40a0d309-5c3f-4f6e-88bb-eeadfc31d9a1",
+              "uuid": "018777cb-eb41-4c8e-9918-a1ba9a0545ec",
+              "parentUUID": "04e456e9-3167-4e36-b24d-46657e1f44c0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fa873a9d-2b92-4d4d-838e-8baee683b5dd"
+            "018777cb-eb41-4c8e-9918-a1ba9a0545ec"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 491,
+          "duration": 498,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

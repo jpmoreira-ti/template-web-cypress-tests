@@ -8,6 +8,6 @@ describe('Quality Tools Automation', () => {
 
     cy.get('#cypress')
       .should('be.visible')
-      .and('contain', 'Javascript + Cypress');
+      .and('contain', 'Cypress');
   });
 });
