@@ -16,6 +16,8 @@ module.exports = defineConfig({
     }
   },
   e2e: {
+    baseUrl: 'https://qualitytoolsautomation.com.br',
+    experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
 
@@ -34,4 +36,12 @@ module.exports = defineConfig({
       });
     },
   },
+  env: {
+    snapshotOnly: true,
+    hideCredentials: true,
+    requestMode: true
+  },
+  defaultCommandTimeout: 5000,
+  fixturesFolder: false,
+  video: false
 });
