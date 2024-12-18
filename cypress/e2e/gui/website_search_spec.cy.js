@@ -1,6 +1,6 @@
 // @search
-describe('Quality Tools Automation', () => {
-  it('should search Cypress on website', () => {
+describe('Search', () => {
+  it('successfully', () => {
     cy.visit('/');
 
     cy.get('#search-input-templates')

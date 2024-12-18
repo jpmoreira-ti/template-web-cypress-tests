@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-18T00:51:33.383Z",
+    "end": "2024-12-18T00:51:34.024Z",
+    "duration": 641,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "606e6f45-59ac-490e-a94f-1b9ca58ad90f",
+      "title": "",
+      "fullFile": "cypress/e2e/gui/website_search_spec.cy.js",
+      "file": "cypress/e2e/gui/website_search_spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "13ec94e0-9dce-4362-81d4-caa2b21d0d84",
+          "title": "Quality Tools Automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should search Cypress on website",
+              "fullTitle": "Quality Tools Automation should search Cypress on website",
+              "timedOut": null,
+              "duration": 608,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('#search-input-templates').type('Cypress');\ncy.get('#cypress').should('be.visible').and('contain', 'Cypress');",
+              "err": {},
+              "uuid": "fc6feaa0-9697-4371-957d-debf8a7e3adc",
+              "parentUUID": "13ec94e0-9dce-4362-81d4-caa2b21d0d84",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc6feaa0-9697-4371-957d-debf8a7e3adc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 608,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
