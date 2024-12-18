@@ -19,3 +19,9 @@ logs/
 # IDEs
 .vscode/
 .idea/
+
+# Report
+report/
+
+# Node modules
+node_modules/
