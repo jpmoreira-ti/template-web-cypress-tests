@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "This project uses [Cypress](https://www.cypress.io) to validate a search on the `qualitytoolsautomation.com.br` website.",
   "devDependencies": {
-    "cypress": "^13.16.1",
+    "cypress": "^13.17.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-multi-reporters": "^2.0.4",
     "mocha-junit-reporter": "^2.2.1",
