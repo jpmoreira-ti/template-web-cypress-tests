@@ -8,7 +8,6 @@ const productData = {
     category: 'electronic'
   }
 
-// tag: smoke
 describe('Fake Store API', () => {
   it('Successfully GETs products', () => {
     cy.request('GET', 'https://fakestoreapi.com/products')

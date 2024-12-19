@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.212" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-12-19T14:43:01" tests="0" file="cypress/e2e/api/fakestore_spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fake Store API" timestamp="2024-12-19T14:43:01" tests="3" time="2.201" failures="0">
+    <testcase name="Fake Store API Successfully GETs products" time="1.524" classname="Successfully GETs products">
+    </testcase>
+    <testcase name="Fake Store API Successfully GET Product by Id" time="0.302" classname="Successfully GET Product by Id">
+    </testcase>
+    <testcase name="Fake Store API Successfully POST Product by Id" time="0.306" classname="Successfully POST Product by Id">
+    </testcase>
+  </testsuite>
+</testsuites>

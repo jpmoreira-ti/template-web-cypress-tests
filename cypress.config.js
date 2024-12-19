@@ -30,8 +30,7 @@ module.exports = defineConfig({
         })
 
         await create(jsonReport, {
-          reportDir: 'cypress/reports/mochawesome',
-          inline: true
+          reportDir: 'cypress/reports/mochawesome'
         })
       })
     }

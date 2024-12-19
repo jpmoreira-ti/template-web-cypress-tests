@@ -1,4 +1,3 @@
-//@gui_search
 describe('Search', () => {
   it('successfully', () => {
     // Act 
