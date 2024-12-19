@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.274" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-12-19T13:53:54" tests="1" file="cypress/e2e/api/fakestore_spec.cy.js" time="0.272" failures="1">
+    <testcase name="An uncaught error was detected outside of a test" time="0.000" classname="An uncaught error was detected outside of a test">
+      <failure message="The following error originated from your test code, not from Cypress.
+
+  &gt; Suite argument &quot;title&quot; must be a string. Received type &quot;object&quot;
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure." type="TypeError"><![CDATA[TypeError: The following error originated from your test code, not from Cypress.
+
+  > Suite argument "title" must be a string. Received type "object"
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure.
+    at createInvalidArgumentTypeError (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:154645:13)
+    at new Suite (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:157144:11)
+    at Suite.create (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:157124:15)
+    at Object.create (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:160876:27)
+    at context.describe.context.context (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:160612:27)
+    at createRunnable (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:145225:31)
+    at <unknown> (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:145286:14)
+    at <unknown> (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:111806:23)
+    at tryCatcher (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:1830:23)
+    at Object.gotValue (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:6499:18)
+    at Object.gotAccum (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:6488:25)
+    at Object.tryCatcher (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:1830:23)
+    at Promise._settlePromiseFromHandler (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:1542:31)
+    at Promise._settlePromise (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:1599:18)
+    at Promise._settlePromise0 (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:1644:10)
+    at Promise._settlePromises (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:1724:18)
+    at _drainQueueStep (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:2430:12)
+    at _drainQueue (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:2423:9)
+    at Async._drainQueues (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:2439:5)
+    at Async.drainQueues (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:2309:14)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

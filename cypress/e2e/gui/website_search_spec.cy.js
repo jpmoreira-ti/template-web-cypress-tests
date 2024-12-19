@@ -1,4 +1,4 @@
-// @gui_search
+//@gui_search
 describe('Search', () => {
   it('successfully', () => {
     // Act 
