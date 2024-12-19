@@ -1,4 +1,4 @@
-// gui_@search
+// @gui_search
 describe('Search', () => {
   it('successfully', () => {
     cy.visit('/')
