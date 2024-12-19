@@ -1,7 +1,7 @@
 // @gui_search
 describe('Search', () => {
   it('successfully', () => {
-    //Act 
+    // Act 
     cy.visit('/')
 
     cy.get('#search-input-templates')
