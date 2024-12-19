@@ -31,12 +31,10 @@ In the Cypress interface, click on the website_search_spec.cy.js file to run the
    npx cypress run
    ```
 
-3. Run Cypress tests with a specific tag or with a npm script:
-
    ```sh
-   npx cypress run --env TAGS=@search
+   npm run test
    ```
 
    ```sh
-   npm run test
+   npx cypress run --spec cypress/e2d/spec_name
    ```
