@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.872" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-12-19T13:06:25" tests="0" file="cypress/e2e/gui/website_search_spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Search" timestamp="2024-12-19T13:06:25" tests="1" time="0.861" failures="1">
+    <testcase name="Search successfully" time="0.000" classname="successfully">
+      <failure message="expected {} to equal &apos;Cypress&apos;" type="AssertionError"><![CDATA[AssertionError: expected {} to equal 'Cypress'
+    at Context.eval (webpack://clear/./cypress/e2e/gui/website_search_spec.cy.js:17:7)
+
+      + expected - actual
+
+      -{}
+      +'Cypress'
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
