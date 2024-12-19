@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.341" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-12-19T11:25:57" tests="0" file="cypress/e2e/api/fakestore_spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fake Store API" timestamp="2024-12-19T11:25:57" tests="2" time="4.338" failures="1">
+    <testcase name="Fake Store API Successfully GETs products" time="4.013" classname="Successfully GETs products">
+    </testcase>
+    <testcase name="Fake Store API Successfully GET Product by Id" time="0.000" classname="Successfully GET Product by Id">
+      <failure message="`cy.fixture()` is not valid because you have configured `fixturesFolder` to `false`.
+
+https://on.cypress.io/fixture" type="CypressError"><![CDATA[CypressError: `cy.fixture()` is not valid because you have configured `fixturesFolder` to `false`.
+
+https://on.cypress.io/fixture
+    at Context.fixture (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:120640:70)
+    at wrapped (https://qualitytoolsautomation.com.br/__cypress/runner/cypress_runner.js:138084:43)
+From Your Spec Code:
+    at Context.eval (webpack://clear/./cypress/e2e/api/fakestore_spec.cy.js:12:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

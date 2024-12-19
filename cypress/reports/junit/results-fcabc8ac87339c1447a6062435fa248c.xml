@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.140" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-12-19T11:19:15" tests="0" file="cypress/e2e/api/fakestore_spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fake Store API" timestamp="2024-12-19T11:19:15" tests="2" time="9.129" failures="1">
+    <testcase name="Fake Store API Successfully GETs products" time="4.410" classname="Successfully GETs products">
+    </testcase>
+    <testcase name="Fake Store API Successfully GET Product by Id" time="0.000" classname="Successfully GET Product by Id">
+      <failure message="expected { Object (id, title, ...) } to have property &apos;length&apos;" type="AssertionError"><![CDATA[AssertionError: expected { Object (id, title, ...) } to have property 'length'
+    at Context.eval (webpack://clear/./cypress/e2e/api/fakestore_spec.cy.js:17:38)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

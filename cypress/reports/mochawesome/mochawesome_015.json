@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-19T11:46:05.994Z",
+    "end": "2024-12-19T11:46:14.330Z",
+    "duration": 8336,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "325955d5-f326-46b3-818f-275ac5941b77",
+      "title": "",
+      "fullFile": "cypress/e2e/api/fakestore_spec.cy.js",
+      "file": "cypress/e2e/api/fakestore_spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ace43e74-da66-4336-b0e1-07acad997da1",
+          "title": "Fake Store API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successfully GETs products",
+              "fullTitle": "Fake Store API Successfully GETs products",
+              "timedOut": null,
+              "duration": 3475,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', 'https://fakestoreapi.com/products').then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.length(20);\n});",
+              "err": {},
+              "uuid": "aee808da-fce2-4f84-9b37-e9dfe71e645e",
+              "parentUUID": "ace43e74-da66-4336-b0e1-07acad997da1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Successfully GET Product by Id",
+              "fullTitle": "Fake Store API Successfully GET Product by Id",
+              "timedOut": null,
+              "duration": 334,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('fakestoreData').as('fakestoreDataJson').then(fakestoreDataJson => {\n  cy.request('GET', `https://fakestoreapi.com/products/${fakestoreDataJson.id}`).then(response => {\n    expect(response.status).to.eq(200);\n    expect(response.body).to.have.property('id', fakestoreDataJson.id);\n    expect(response.body).to.have.property('title', fakestoreDataJson.title);\n  });\n});",
+              "err": {},
+              "uuid": "97f37211-f850-46b0-9379-be1cc2d49db0",
+              "parentUUID": "ace43e74-da66-4336-b0e1-07acad997da1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Successfully POST Product by Id",
+              "fullTitle": "Fake Store API Successfully POST Product by Id",
+              "timedOut": null,
+              "duration": 4412,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('POST', `https://fakestoreapi.com/products`, productData).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('id');\n  expect(response.body).to.have.property('title', productData.title);\n  expect(response.body).to.have.property('price', productData.price);\n  expect(response.body).to.have.property('description', productData.description);\n  expect(response.body).to.have.property('image', productData.image);\n  expect(response.body).to.have.property('category', productData.category);\n});",
+              "err": {},
+              "uuid": "a5139986-eccd-43f5-96b5-93bc93f507bb",
+              "parentUUID": "ace43e74-da66-4336-b0e1-07acad997da1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aee808da-fce2-4f84-9b37-e9dfe71e645e",
+            "97f37211-f850-46b0-9379-be1cc2d49db0",
+            "a5139986-eccd-43f5-96b5-93bc93f507bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8221,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

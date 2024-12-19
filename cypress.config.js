@@ -1,4 +1,4 @@
-const { defineConfig } = require('cypress');
+const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   reporter: 'cypress-multi-reporters',
@@ -18,23 +18,23 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://qualitytoolsautomation.com.br',
     experimentalRunAllSpecs: true,
-    setupNodeEvents(on, config) {
-      require('cypress-mochawesome-reporter/plugin')(on);
+    setupNodeEvents (on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on)
 
       on('after:run', async (results) => {
-        const { merge } = require('mochawesome-merge');
-        const { create } = require('mochawesome-report-generator');
+        const { merge } = require('mochawesome-merge')
+        const { create } = require('mochawesome-report-generator')
 
         const jsonReport = await merge({
           files: ['cypress/reports/mochawesome/*.json']
-        });
+        })
 
         await create(jsonReport, {
           reportDir: 'cypress/reports/mochawesome',
           inline: true
-        });
-      });
-    },
+        })
+      })
+    }
   },
   env: {
     snapshotOnly: true,
@@ -42,6 +42,5 @@ module.exports = defineConfig({
     requestMode: true
   },
   defaultCommandTimeout: 5000,
-  fixturesFolder: false,
   video: false
-});
+})

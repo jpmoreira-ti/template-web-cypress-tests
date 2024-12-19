@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests with tag
-        run: npx cypress run --env TAGS=@search
+        run: npx cypress run --env TAGS=@gui_search
 
       - name: Upload test report
         if: always()

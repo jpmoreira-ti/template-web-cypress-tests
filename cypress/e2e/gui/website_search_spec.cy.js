@@ -1,13 +1,13 @@
-// @search
+// gui_@search
 describe('Search', () => {
   it('successfully', () => {
-    cy.visit('/');
+    cy.visit('/')
 
     cy.get('#search-input-templates')
-      .type('Cypress');
+      .type('Cypress')
 
     cy.get('#cypress')
       .should('be.visible')
-      .and('contain', 'Cypress');
-  });
-});
+      .and('contain', 'Cypress')
+  })
+})

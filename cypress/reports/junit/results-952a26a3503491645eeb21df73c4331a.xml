@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.346" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-12-19T11:34:40" tests="0" file="cypress/e2e/api/fakestore_spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fake Store API" timestamp="2024-12-19T11:34:40" tests="2" time="1.343" failures="1">
+    <testcase name="Fake Store API Successfully GETs products" time="1.011" classname="Successfully GETs products">
+    </testcase>
+    <testcase name="Fake Store API Successfully GET Product by Id" time="0.000" classname="Successfully GET Product by Id">
+      <failure message="A fixture file could not be found at any of the following paths:
+
+    &gt; cypress/fixtures/fakestoreData
+    &gt; cypress/fixtures/fakestoreData.[ext]
+
+Cypress looked for these file extensions at the provided path:
+
+    &gt; .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip
+
+Provide a path to an existing fixture file." type="Error"><![CDATA[Error: A fixture file could not be found at any of the following paths:
+
+    > cypress/fixtures/fakestoreData
+    > cypress/fixtures/fakestoreData.[ext]
+
+Cypress looked for these file extensions at the provided path:
+
+    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip
+
+Provide a path to an existing fixture file.
+    at Object.<anonymous> (<embedded>:2771:115826)
+    at Object.tryCatcher (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/promise.js:694:18)
+    at Promise._fulfill (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/promise.js:638:18)
+    at <unknown> (/Users/jp/Library/Caches/Cypress/13.17.0/Cypress.app/Contents/Resources/app/node_modules/bluebird/js/release/nodeback.js:42:21)
+    at s (<embedded>:227:106085)
+    at T.<anonymous> (<embedded>:2771:105530)
+    at T.emit (node:events:514:28)
+    at T._finish (<embedded>:2771:106397)
+    at i (<embedded>:2771:105793)
+    at T._processSimple2 (<embedded>:2771:111554)
+    at <unknown> (<embedded>:2771:111407)
+    at T._stat2 (<embedded>:2771:112472)
+    at <unknown> (<embedded>:2771:112319)
+    at s (<embedded>:846:24236)
+    at s (<embedded>:227:106085)
+    at r (<embedded>:3031:13485)
+    at FSReqCallback.oncomplete (node:fs:210:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

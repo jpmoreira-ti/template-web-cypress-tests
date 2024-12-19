@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.129" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-12-19T11:17:42" tests="0" file="cypress/e2e/api/fakestore_spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fake Store API" timestamp="2024-12-19T11:17:42" tests="1" time="1.115" failures="0">
+    <testcase name="Fake Store API Successfully GETs products" time="1.092" classname="Successfully GETs products">
+    </testcase>
+  </testsuite>
+</testsuites>

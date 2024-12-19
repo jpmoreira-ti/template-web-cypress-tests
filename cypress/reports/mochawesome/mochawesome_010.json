@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-19T11:31:47.012Z",
+    "end": "2024-12-19T11:31:49.899Z",
+    "duration": 2887,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3ef48ef-84d5-44ea-860b-92e7d2610b4e",
+      "title": "",
+      "fullFile": "cypress/e2e/api/fakestore_spec.cy.js",
+      "file": "cypress/e2e/api/fakestore_spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4ad5dc9-febb-4081-aeab-7dc783021c67",
+          "title": "Fake Store API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successfully GETs products",
+              "fullTitle": "Fake Store API Successfully GETs products",
+              "timedOut": null,
+              "duration": 2577,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', 'https://fakestoreapi.com/products').then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.length(20);\n});",
+              "err": {},
+              "uuid": "2bf8c85f-8385-431a-8e58-8f42c89ca876",
+              "parentUUID": "d4ad5dc9-febb-4081-aeab-7dc783021c67",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Successfully GET Product by Id",
+              "fullTitle": "Fake Store API Successfully GET Product by Id",
+              "timedOut": null,
+              "duration": 257,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('fakestoreData').as('fakestoreDataJson');\ncy.request('GET', `https://fakestoreapi.com/products/${fakestoreDataJson.id}`).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('id', fakestoreDataJson.id);\n  expect(response.body).to.have.property('title');\n});",
+              "err": {
+                "message": "ReferenceError: fakestoreDataJson is not defined",
+                "estack": "ReferenceError: fakestoreDataJson is not defined\n    at Context.eval (webpack://clear/./cypress/e2e/api/fakestore_spec.cy.js:13:61)",
+                "diff": null
+              },
+              "uuid": "b4cb7e4f-dd71-4cf9-8e38-8694327c2c87",
+              "parentUUID": "d4ad5dc9-febb-4081-aeab-7dc783021c67",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2bf8c85f-8385-431a-8e58-8f42c89ca876"
+          ],
+          "failures": [
+            "b4cb7e4f-dd71-4cf9-8e38-8694327c2c87"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2834,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
